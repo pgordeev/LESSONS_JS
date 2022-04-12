@@ -6,7 +6,7 @@ let tmp = segment1; //5
 
 console.log("Подсчет наибольшего отрезка из трех");
 
-if (tmp > segment1) {
+if (segment2 > tmp) {
   tmp = segment2;
 }
-console.log("Длина наибоьшего сегмента = ", tmp);
+if (segment3) console.log("Длина наибоьшего сегмента = ", tmp);

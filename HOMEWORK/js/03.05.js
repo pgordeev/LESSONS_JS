@@ -1,3 +1,5 @@
+// Homework 03.05
+
 /* function sayHi(name) {
   name = name ? console.log(`HI, ${name}`) : console.log(`HI, Guest`);
 } */

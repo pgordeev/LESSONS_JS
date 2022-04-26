@@ -33,4 +33,4 @@ function calcLeapYear(firstYear, lastYear) {
   return leapArr.length;
 }
 
-console.log(calcLeapYear(1900, 2000));
+console.log(calcLeapYear(4, 2000));

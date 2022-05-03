@@ -48,15 +48,13 @@ console.log(spinWords('F, fdsdsdd u')); */
   return newArr;
 } */
 
-//Задача про Solve("*'&ABCDabcde12345") = [4,5,5,3] uppercase, lower, num, spec
+/* function binToDec(bin) {
+  const arr = [bin, parseInt(bin, 2)];
+  return arr;
+} */
 
-function solve(s) {
-  const res = s.split('');
-  for (let i = 0; i <= s.length; i++) {}
-  return res;
+function mergeArrays(arr1, arr2) {
+  const resArr = [];
+
+  arr1.concat(arr2).sort((a, b) => a - b);
 }
-
-let total = 0;
-[1, 2, 3].forEach(function (num) {
-  total += num;
-});

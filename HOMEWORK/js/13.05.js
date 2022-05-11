@@ -5,7 +5,7 @@
 /**
  * Проверяет строку на наличие заданных подстрок 'find' и меняет их на 'replace'
  * @param {String} str исходная строка
- * @param {String} find искомыая подстрока (-и)
+ * @param {String} find искомая подстрока (-и)
  * @param {String} replace замена для подстроки
  * @return {String} измененая строка, где все 'find' заменены на 'replace'
  */
@@ -14,8 +14,12 @@ function changeFindToReplace(str, find, replace) {
   if (str.indexOf(find) == -1) {
     return alert(`Подстрока ${find} в исходной строке не найдена`);
   }
-  do {
+  //Можно циклом...
+  /* do {
     str = str.replace(find, replace);
-  } while (str.indexOf(find) > -1);
+  } while (str.indexOf(find) > -1); */
+
+  // ...но replaceAll проще
+  str = str.replaceAll(find, replace);
   return str;
 }

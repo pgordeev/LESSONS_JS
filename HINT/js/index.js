@@ -54,7 +54,7 @@ for (let index in names) {
   //index
 }
 
-// callvack функцию можно описать отдельно
+// callback функцию можно описать отдельно
 function logArrayItems(el, index, array) {
   console.log(`names[${index}] = ${el}`);
 }

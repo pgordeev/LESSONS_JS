@@ -4,7 +4,7 @@
 
 const testArr = [-1, 1, 1, 3, 4, -2, -2, 5, 5, 5, 6, 6, 7, 8, 8, 9];
 
-//используем метод filter и indexOf
+//используем методы filter и indexOf
 
 function getUniqElFromArr(arr) {
   const uniqArr = arr.filter((el, idx, arr) => arr.indexOf(el) === idx);
@@ -15,6 +15,7 @@ console.log(getUniqElFromArr(testArr));
 // но самый простой способ использовать специальный объект Set. Он всегда возращает только уникальные значения
 
 const setArr = [...new Set(testArr)];
+console.log(setArr);
 
 /* 2. Написать функцию которая будет принимать два массива, и будет сравнивать
 их, если они идентичны (элементы совпадают по значению и по индексу) то
